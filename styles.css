@@ -1,115 +1,89 @@
+   /* Hero Section Styles */
+    .hero {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-hero-image.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
 
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
 
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
 
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
 
+    .cta-button {
+      background-color: #007bff;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
 
-main{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 100px;
-    
-}
+    .cta-button:hover {
+      background-color: #0056b3;
+    }
 
-.hero-section{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    /* Features Section Styles */
+    .features {
+      padding: 50px 20px;
+      text-align: center;
+    }
 
-.hero-section button{
-    width: 100px;
-    padding: 10px;
-    background-color: blueviolet;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
+    .features h2 {
+      margin-bottom: 40px;
+    }
 
-.responsive-features{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
+    .feature-columns {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
 
-.cards img{
-    width: 50px;
-}
+    .feature-column {
+      flex: 1;
+      min-width: 250px;
+      margin: 20px;
+    }
 
-.cards{
-    background-color: azure;
-    padding: 20px;
-    width: 300px;
-}
+    .feature-column img {
+      width: 50px;
+      margin-bottom: 15px;
+    }
 
+    .feature-column h3 {
+      margin-bottom: 10px;
+    }
 
+    /* Footer Section Styles */
+    footer {
+      background-color: #f0f0f0;
+      padding: 30px 20px;
+      text-align: center;
+    }
 
-footer{
-    background-color:black;
-    color: whitesmoke;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.625rem;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1.25rem 2.5rem;
-}
+    footer p {
+      margin-bottom: 10px;
+    }
 
-footer .nav-footer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-footer .footer-logo{
-    display: flex;
-    flex-direction: column;
-    gap: 0.625rem;
-}
-
-footer .footer-logo span{
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
-footer p{
-    color: var(--text1-color);
-}
-
-.copy-right{
-    text-align: center;
-}
-
-footer .container-links{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.links{
-    display: flex;
-    flex-direction: column;
-    gap: 0.625rem;
-}
-
-.links ul li{
-    margin-bottom: 0.5rem;
-    color: var(--text1-color);
-}
-
-footer .social-media{
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-footer .social-media i{
-    background-color: var(--primary-color);
-    color: white;
-    padding: 0.625rem;
-    border-radius: 100%;
-}
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .feature-columns {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
