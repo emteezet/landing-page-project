@@ -1,0 +1,115 @@
+
+
+
+
+
+main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+    
+}
+
+.hero-section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section button{
+    width: 100px;
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.responsive-features{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cards img{
+    width: 50px;
+}
+
+.cards{
+    background-color: azure;
+    padding: 20px;
+    width: 300px;
+}
+
+
+
+footer{
+    background-color:black;
+    color: whitesmoke;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.25rem 2.5rem;
+}
+
+footer .nav-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .footer-logo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+footer .footer-logo span{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+footer p{
+    color: var(--text1-color);
+}
+
+.copy-right{
+    text-align: center;
+}
+
+footer .container-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.links ul li{
+    margin-bottom: 0.5rem;
+    color: var(--text1-color);
+}
+
+footer .social-media{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer .social-media i{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.625rem;
+    border-radius: 100%;
+}
